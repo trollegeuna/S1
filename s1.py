@@ -20,10 +20,10 @@ def hidden2(x):     # uppgift 4
 # indata x är strängen som vi vill konstruera ett regex för att söka efter
     s = ".*"
     return s.join(x)
-    
+
 
 def equation():     # uppgift 5
-    return ""
+    return "^(\+|\-)?((\d)+[\+\-\*\/])*(\d)+(=((\d)+[\+\-\*\/])*(\d)+)?$"
 
 def parentheses():  # uppgift 6
     return ""
