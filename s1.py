@@ -3,20 +3,24 @@
 # Dessa funktioner är det som ska skrivas för att lösa de olika
 # uppgifterna i labblydelsen.
 ########################################################################
+import re
 
 def dna():          # uppgift 1
-    return ""
+    return "^[ACGT]+$"
 
 def sorted():       # uppgift 2
-    return ""
+    return "(^0*1*2*3*4*5*6*7*8*9*$)"
 
 def hidden1(x):     # uppgift 3
 # indata x är strängen som vi vill konstruera ett regex för att söka efter
-    return ""
+
+    return "(.*("+x+").*)"
 
 def hidden2(x):     # uppgift 4
 # indata x är strängen som vi vill konstruera ett regex för att söka efter
-    return ""
+    s = ".*"
+    return s.join(x)
+    
 
 def equation():     # uppgift 5
     return ""
@@ -59,5 +63,3 @@ def main():
 
 
 if __name__ == '__main__': main()
-
-    
