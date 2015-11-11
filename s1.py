@@ -11,6 +11,7 @@ def dna():          # uppgift 1
 def sorted():       # uppgift 2
     return "^9*8*7*6*5*4*3*2*1*0*$"
 
+
 def hidden1(x):     # uppgift 3
 # indata x är strängen som vi vill konstruera ett regex för att söka efter
 
