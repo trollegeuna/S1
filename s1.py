@@ -15,7 +15,7 @@ def sorted():       # uppgift 2
 def hidden1(x):     # uppgift 3
 # indata x är strängen som vi vill konstruera ett regex för att söka efter
 
-    return "(.*("+x+").*)"
+    return "(.*(%s).*)" % (x)
 
 def hidden2(x):     # uppgift 4
 # indata x är strängen som vi vill konstruera ett regex för att söka efter
@@ -24,7 +24,7 @@ def hidden2(x):     # uppgift 4
 
 
 def equation():     # uppgift 5
-    return "^(\+|\-)?((\d)+[\+\-\*\/])*(\d)+(=((\d)+[\+\-\*\/])*(\d)+)?$"
+    return "^(\+|\-)?(\d)+([\+\-\*\/](\d)+)*(=(\+|\-)?(\d)+([\+\-\*\/](\d)+)*)?$"
 
 def parentheses():  # uppgift 6
     return "^(\((\((\((\((\(\))*\))*\))*\))*\))*$"
@@ -32,8 +32,7 @@ def parentheses():  # uppgift 6
     # (\(        ( \( \) )           *\) )
 
 def sorted3():      # uppgift 7
-    return ""
-
+    return "^\d*((01[2-9])|([01]2[3-9])|([0-2]3[4-9])|([0-3]4[5-9])|([0-4]5[6-9])|([0-5]6[7-9])|([0-6]7[89])|([0-7]89))\d*$"
 
 ########################################################################
 # Raderna nedan är lite testkod som du kan använda för att provköra
