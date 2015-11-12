@@ -9,6 +9,7 @@ def dna():          # uppgift 1
     return "^[ACGT]+$"
 
 def sorted():       # uppgift 2
+
     return "^9*8*7*6*5*4*3*2*1*0*$"
 
 
@@ -24,14 +25,26 @@ def hidden2(x):     # uppgift 4
 
 
 def equation():     # uppgift 5
+    #   start kolla efter ett + eller ett - eller inget tecken
+    #   ^(\+|\-)?
+
+    #   digit (en eller flera) |   ( +-*/ och ett tal efter)    noll eller fler
+    #           (\d)+                  ([\+\-\*\/]     (\d)+)   *
+
+    #   samma sak fast höger sida där hela får göras 0 eller 1 gång
+    #   (=(\+|\-)?(\d)+([\+\-\*\/](\d)+)*)?$
     return "^(\+|\-)?(\d)+([\+\-\*\/](\d)+)*(=(\+|\-)?(\d)+([\+\-\*\/](\d)+)*)?$"
 
 def parentheses():  # uppgift 6
+
+    #       ^(\( \) )*$
+
     return "^(\((\((\((\((\(\))*\))*\))*\))*\))*$"
     #    ^(\( \) )*$
     # (\(        ( \( \) )           *\) )
 
 def sorted3():      # uppgift 7
+    
     return "^\d*((01[2-9])|([01]2[3-9])|([0-2]3[4-9])|([0-3]4[5-9])|([0-4]5[6-9])|([0-5]6[7-9])|([0-6]7[89])|([0-7]89))\d*$"
 
 ########################################################################
